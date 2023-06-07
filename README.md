@@ -1,1 +1,1 @@
-# SonarQube-code-analysis-formaven
+# SonarQube-code-analysis-for-maven
