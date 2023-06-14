@@ -1,0 +1,15 @@
+name: Maven SONAR
+
+on:
+  push:
+    branches : none #[main]
+  
+  workflow_dispatch:
+
+jobs:
+  call-scan:
+    uses: he329178/nodejs/.github/workflows/sonar-scan.yml@master
+    with:
+      SONAR_HOST_URL : 'http://65.0.128.192:9000/'
+    secrets:
+      SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
