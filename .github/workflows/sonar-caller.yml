@@ -8,7 +8,7 @@ on:
 
 jobs:
   call-scan:
-    uses: he329178/nodejs/.github/workflows/sonar-scan.yml@master
+    uses: ranvivekjan/sonar-qube-reusuable/.github/workflows/sonar-scan.yml@main
     with:
       SONAR_HOST_URL : 'http://65.0.128.192:9000/'
     secrets:
